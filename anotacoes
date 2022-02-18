@@ -1,0 +1,21 @@
+TDD E JAVA: TESTES AUTOMATIZADOS COM JUNIT
+
+*** AULA 1 - Testes automatizados ***
+
+
+1. Quais as principais vantagens de se utilizar a prática de escrever testes automatizados em uma aplicação?
+
+-- Garantir que o código da aplicação atende corretamente aos requisitos de negócio.
+(Os testes automatizados ajudam a manter a qualidade da aplicação, pois validam se os requisitos de negócio estão sendo
+atendidos conforme o esperado.)
+-- Facilitar a manutenção do software.
+(Testes automatizados facilitam a manutenção do software, pois qualquer alteração que cause algum impacto será
+rapidamente detectada.)
+
+
+Nessa aula, você aprendeu:
+
+    • O que são testes automatizados;
+    • A importância de se escrever testes automatizados em uma aplicação;
+    • Como escrever um teste automatizado utilizando uma classe Java com o método main.
+
