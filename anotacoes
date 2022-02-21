@@ -19,3 +19,12 @@ Nessa aula, você aprendeu:
     • A importância de se escrever testes automatizados em uma aplicação;
     • Como escrever um teste automatizado utilizando uma classe Java com o método main.
 
+*** AULA 2 - JUnit ***
+
+1. Uma das facilidades do JUnit é avaliar se os testes estão passando ou falhando. Como o JUnit nos fornece
+esse feedback?
+-- Via relatório exibido na IDE, como por exemplo a view JUnit no Eclipse.
+(As IDEs possuem plugins de integração com o JUnit, facilitando a análise dos resultados dos testes executados.)
+
+No IntelliJ os resultados são mostrados na aba Run e quando há falha existe a descrição do erro e o retorno
+divergente.
