@@ -28,3 +28,16 @@ esse feedback?
 
 No IntelliJ os resultados são mostrados na aba Run e quando há falha existe a descrição do erro e o retorno
 divergente.
+
+2. Por qual motivo devemos utilizar os métodos estáticos assert do JUnit, como por exemplo o assertEquals?
+-- Para validar se a implementação atende aos requisitos esperados.
+(Os métodos assert nos permitem verificar se a classe testada está executando seu comportamento conforme o esperado.)
+
+Nessa aula, você aprendeu:
+
+    • A história do JUnit;
+    • Como adicionar o JUnit ao projeto;
+    • Como escrever um teste automatizado com JUnit;
+    • Como executar os testes com JUnit e analisar o resultado da execução.
+
+
