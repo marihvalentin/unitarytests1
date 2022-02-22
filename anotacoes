@@ -97,3 +97,16 @@ Nessa aula, você aprendeu:
    • As abordagens para testar um método que lança uma exception.
 
 
+
+*** AULA 5 - Mais recursos (boas práticas) ***
+
+• Método com anotação @BeforeEach do JUnit = anotação indica ao JUnit para método ser executado antes de cada teste
+• Método com anotação @AfterEach do JUnit = anotação indica ao JUnit para método ser executado depois de cada teste
+• Método com anotação @BeforeAll do JUnit = para execução apenas uma vez, antes de todos os testes
+• Método com anotação @AfterAll do JUnit = para execução apenas uma vez, depois de todos os testes
+(métodos antes de todos e depois de todos DEVEM ser ESTÁTICOS - public static ...)
+
+1. Qual o objetivo da anotação @BeforeEach?
+-- Marcar um método para ser chamado antes de cada um dos métodos de teste.
+( O '@BeforeEach' nos ajuda a evitar códigos duplicados nos métodos de teste, uma vez que ele marca um método para
+sempre ser chamado antes de cada um dos testes.)
