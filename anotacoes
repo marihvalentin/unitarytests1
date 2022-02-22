@@ -84,3 +84,16 @@ Nessa aula, você aprendeu:
     • Como realizar uma refatoração no código;
     • As vantagens de escrever os testes antes da implementação.
 
+
+*** AULA 4 - Lidando com Exceptions ***
+
+1. Qual a maneira correta de testar um método que lança exception?
+-- Utilizando o método assertThrows.
+(O 'assertThrows' serve para verificar se uma exception foi lançada ao chamar um método.)
+
+Nessa aula, você aprendeu:
+
+   • Como testar métodos que podem lançar exceptions;
+   • As abordagens para testar um método que lança uma exception.
+
+

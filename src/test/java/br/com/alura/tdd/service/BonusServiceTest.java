@@ -13,10 +13,19 @@ public class BonusServiceTest {
     @Test
     public void bonusDeveriaSerZeroParaSalarioMuitoAlto() {
         BonusService service = new BonusService();
-        BigDecimal bonus =
-        service.calcularBonus(new Funcionario("Maria", LocalDate.now(), new BigDecimal("25000")));
+        assertThrows(IllegalArgumentException.class,
+                () -> service.calcularBonus(new Funcionario("Maria", LocalDate.now(),
+                        new BigDecimal("25000"))));
 
-        assertEquals(new BigDecimal("0.00"), bonus);
+        // OU
+        //Uso do try catch é útil para capturar a mensagem da exception, por exemplo
+        /*try {
+            service.calcularBonus(new Funcionario("Maria", LocalDate.now(),
+                    new BigDecimal("25000")));
+            fail("Não caiu na exception");
+        } catch (Exception e) {
+            assertEquals("Funcionário com Salário > R$10.000,00 não recebe bônus!", e.getMessage());
+        }*/
     }
 
     @Test
