@@ -110,3 +110,43 @@ Nessa aula, você aprendeu:
 -- Marcar um método para ser chamado antes de cada um dos métodos de teste.
 ( O '@BeforeEach' nos ajuda a evitar códigos duplicados nos métodos de teste, uma vez que ele marca um método para
 sempre ser chamado antes de cada um dos testes.)
+
+Quais classes testar?
+• Classes com regra de negócio, algoritmos, cálculos, validações e que, principalmente, tenham coisas que tendem a
+mudar com frequência no futuro. Geralmente classes tipo Service e que com modificações podem "quebrar" o que está
+funcionando.
+
+2. Vimos que em uma aplicação é possivel termos centenas, ou até mesmo milhares de classes que implementam as regras
+de negócio dela. Quais dessas classes são consideradas boas candidatas para testes automatizados?
+-- Apenas as classes que possuem regras de negócio e que possivelmente sofrerão bastante modificações.
+(Esse é o principal tipo de classe para ser testada em uma aplicação.)
+
+Nessa aula, você aprendeu:
+
+   • Como organizar o código de uma classe de teste;
+   • A utilizar as anotacoes @BeforeEach, @AfterEach, @BeforeAll e AfterAll do JUnit;
+   • Que não se deve testar métodos privados;
+   • Avaliar quais classes devem ser testadas em uma aplicação.
+
+*** RESUMO ***
+
+Nós começamos com essa aplicação, que é uma aplicação que simula parte de um sistema de RH, de folha de pagamento,
+algo do gênero, e tínhamos a classe BonusService, que é uma classe que tinha uma regra de negócios na nossa aplicação.
+E criamos na nossa classe BonusServiceTeste, começamos implementando o teste por último, já tinha esse código
+implementado, e depois escrevemos os testes.
+
+Aprendemos a usar o JUnit, aprendemos a adicionar o JUnit no projeto, como escreve o teste, a usar essas anotações
+@Test, fazer os asserts, nós aprendemos a como lidar com exceptions, em métodos que eventualmente lançam exceptions
+e queremos verificar se a exception está acontecendo em determinado cenário. Aprendemos a fazer o assertThrows ou o
+try catch.
+
+Aprendemos também a fazer o TDD, conforme implementamos aquela funcionalidade do reajuste. Então aqui no caso começamos
+pelo teste e vimos que sim, é possível começar escrevendo o teste, o teste funciona como um rascunho para ir modelando
+o design do nosso código, e depois partimos para a implementação, e fizemos uma implementação cheia de if elses e
+vimos como utilizar o padrão de projeto strategy para fazer uma refatoração.
+
+Implementamos isso no próprio enum, criamos esse método que tem essa lógica para cada constante devolver o valor do
+seu reajuste. Depois ficamos discutindo sobre boas práticas, que era importante refatorarmos o código de teste também
+e utilizar os recursos, como @BeforeEach, @AfterEach, aqui do JUnit, para simplificar o código de teste.
+
+Por fim, fizemos as discussões sobre o que testar numa aplicação, que tipo de código que temos que testar.
