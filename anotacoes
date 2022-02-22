@@ -40,4 +40,47 @@ Nessa aula, você aprendeu:
     • Como escrever um teste automatizado com JUnit;
     • Como executar os testes com JUnit e analisar o resultado da execução.
 
+*** AULA 2 - TDD: Test-Driven Development ***
+
+Princípios do método TDD consiste em arquitetar primeiro os testes com base nos requisitos da aplicação e com
+base nele realizar a implementação do código. Após, realizara refatoração do código para melhorar a implementação
+e possíveis manutenções posteriores.
+
+1. Aprendemos que uma das etapas do TDD é chamada de refatoração. Quando devemos realizar tal etapa ao desenvolver
+ma funcionalidade com TDD?
+-- Quando a qualidade do código estiver ruim.
+(A refatoração nos ajuda a manter a qualidade do código, algo extremamente importante para a manutenção de
+uma aplicação.)
+
+
+Vantagens do TDD
+
+• Código já sai "testado"; (pela ordem ser inversa, ao final da implementação o teste já está pronto)
+• Evita testes "viciados" na implementação (ex: escrever testes pensando na implementação e não no comportamento,
+o que é uma má prática)
+• Refatoração faz parte do processo (uma boa prática e garante a qualidade do código)
+• Ajuda a manter o foco;
+• Temos uma "tendência" em escrever um código mais simples (simples de testar e de implementar, aos poucos isso vai
+acontecendo)
+
+Quando utilizar o TDD?
+Normalmente quando será implementada uma funcionalidade complexa e que ainda não está muito claro o que será necessário,
+o TDD é útil porque funciona como um rascunho, ajuda a pensar no código, ajuda no foco e na implementação rápida
+e simples.
+Códigos que levarão algoritmos, validações e coisas complexas
+
+Códigos simples e triviais não tem vantagem em uso do TDD.
+
+2. Quais as principais vantagens de se utilizar o TDD?
+-- A funcionalidade implementada já sai coberta por testes
+(No TDD o teste vem antes, o que garante que a funcionalidade já será implementada com cobertura de testes.)
+-- TDD ajuda a manter o foco durante a implementação de uma funcionalidade.
+(Ao implementar os cenários de teste a tendência é manter o foco durante a implementação.)
+
+Nessa aula, você aprendeu:
+
+    • O que é o TDD;
+    • Como escrever uma funcionalidade via TDD;
+    • Como realizar uma refatoração no código;
+    • As vantagens de escrever os testes antes da implementação.
 
